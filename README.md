@@ -15,3 +15,7 @@ Generally I only set the `top` and `left` properties, but using them all along w
 I also got a reminder that `position: fixed` fixes the position of whatever element to the **viewport**. You can even scroll and the modal will stay right smack dab in the middle, because the viewport doesn't change.
 
 ![position: fixed; working on modal](./screenshots/modal-position-fixed.png)
+
+### A better/new understanding of setTimeout() 
+
+I had never really considered that this removes something from the flow of your main JavaScript code, which executes from top to bottom.  
