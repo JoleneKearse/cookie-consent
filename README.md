@@ -16,6 +16,13 @@ I also got a reminder that `position: fixed` fixes the position of whatever elem
 
 ![position: fixed; working on modal](./screenshots/modal-position-fixed.png)
 
-### A better/new understanding of setTimeout() 
+### A better/new understanding of setTimeout()
 
-I had never really considered that this removes something from the flow of your main JavaScript code, which executes from top to bottom.  
+I had never really considered that this method removes something from the flow of your main JavaScript code, which executes from top to bottom.
+
+![setTimeout() used in a quiz app](./screenshots/setTimeout.png)
+
+This takes in 2 parameters: `(function, delay)`.
+We can use an **anonymous function**, then set the delay in **milliseconds**.
+
+A **gotchya** is remembering `setTimeout()` takes it completely out of the flow. So if you have multiples that you want to go in a certain sequence, you need to set each time accordingly. Like _one at 3000 and the next at 6000._
