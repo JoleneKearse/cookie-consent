@@ -6,7 +6,7 @@ _Aside: If you haven't heard of Scrimba, they are a tremendously great learning 
 
 This is the first project in Module 5 Essential JavaScript Concepts.
 
-## Things I Learned (ie gained a greater understanding of)
+## Things I (Re)Learned (i.e. - gained a greater understanding of)
 
 ### How to center a modal using position fixed
 
