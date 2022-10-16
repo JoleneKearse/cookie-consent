@@ -36,3 +36,7 @@ Although it makes sense, I had never considered the following fact. Any button i
 The only real advantage to using the `button` tag is you can style it a bit more, like making it an image.
 
 If using this tag, giving it a `type="submit"` will help distinguish it from other buttons.
+
+Also learned a new thing, when you fill out the form and hit submit, it will show up in the URL!
+
+![url showing submitted info](./screenshots/submit-url-deets.png)
