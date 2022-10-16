@@ -32,3 +32,7 @@ A **gotcha** is remembering `setTimeout()` takes it completely out of the flow. 
 Although it makes sense, I had never considered the following fact. Any button in a form will be a **Submit** button. It doesn't even matter how you add it to the html, it automatically submits the form.
 
 ![2 common ways to add a submit button](./screenshots/submit-buttons.png)
+
+The only real advantage to using the `button` tag is you can style it a bit more, like making it an image.
+
+If using this tag, giving it a `type="submit"` will help distinguish it from other buttons.
