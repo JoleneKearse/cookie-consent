@@ -25,4 +25,10 @@ I had never really considered that this method removes something from the flow o
 This takes in 2 parameters: `(function, delay)`.
 We can use an **anonymous function**, then set the delay in **milliseconds**.
 
-A **gotchya** is remembering `setTimeout()` takes it completely out of the flow. So if you have multiples that you want to go in a certain sequence, you need to set each time accordingly. Like _one at 3000 and the next at 6000._
+A **gotcha** is remembering `setTimeout()` takes it completely out of the flow. So if you have multiples that you want to go in a certain sequence, you need to set each time accordingly. Like _one at 3000 and the next at 6000._
+
+### Submit Buttons
+
+Although it makes sense, I had never considered the following fact. Any button in a form will be a **Submit** button. It doesn't even matter how you add it to the html, it automatically submits the form.
+
+![2 common ways to add a submit button](./screenshots/submit-buttons.png)
