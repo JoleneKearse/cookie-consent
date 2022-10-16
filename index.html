@@ -25,6 +25,7 @@
 				you need to know to get all of that and much more, without you lifting a finger. You can learn passively. Just sit back,
 				close your eyes, and let the sound of my voice make the code sink deep into your brain.</p>
     </section>
+
     <div class="modal" id="modal">
 			<div class="close-modal-btn-container">
 				<button class="modal-close-btn" id="modal-close-btn" disabled>X</button>
@@ -32,10 +33,14 @@
 			<div class="modal-inner" id="modal-inner">
 				<h2>We ❤️ Your Data!</h2>
 				<p class="modal-text" id="modal-text">We have a strict policy on tracking and spamming: we'll definitely track you, and we'll definitely spam you. To use this site, enter your name and email address and accept our ridiculous terms and conditions.</p>	
+
         <form>
           <input type="text" name="fullName" id="name" placeholder="Enter your full name" required/>
           <input type="email" name="email" id="email" placeholder="Enter your email" required>
-          <button type="submit">Give us your deets!</button>
+          <div class="modal-choice-btns" id="modal-choice-btns">
+            <button type="submit" class="modal-btn">Accept</button>
+            <button class="modal-btn">Decline</button>
+          </div>
         </form>			
 			</div>
 		</div>
