@@ -40,3 +40,5 @@ If using this tag, giving it a `type="submit"` will help distinguish it from oth
 Also learned a new thing, when you fill out the form and hit submit, it will show up in the URL!
 
 ![url showing submitted info](./screenshots/submit-url-deets.png)
+
+As forms are sent off to a server, it creates this **query string**, `?fullName=John+Doe` followed by an ampersand for the next entered field. Since this is a frontend project, we need to use `e.preventDefault()`. We'd also do this when the user would still be interacting with the page.
