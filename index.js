@@ -2,6 +2,7 @@ const modal = document.getElementById("modal");
 const modalCloseBtn = document.getElementById("modal-close-btn");
 const consentForm = document.getElementById("consentForm");
 const modalText = document.getElementById("modal-text");
+const modalInner = document.getElementById("modal-inner");
 
 // set time interval for annoying modal to appear
 setTimeout(function () {
@@ -27,4 +28,13 @@ consentForm.addEventListener("submit", function (e) {
   setTimeout(function () {
     document.getElementById("uploadText").textContent = "Making the sale...";
   }, 1500);
+  setTimeout(function () {
+    modalInner.innerHTML = `
+      <h2>Thanks you sucker! </h2>
+      <p>We just sold the rights to your eternal soul.</p>
+      <div class="idiot-gif">
+          <img src="img/pirate.gif">
+      </div>
+    `;
+  }, 3000);
 });
