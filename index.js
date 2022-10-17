@@ -18,7 +18,7 @@ cookies.addEventListener("submit", function (e) {
   e.preventDefault();
   modalText.innerHTML = `
     <div class="modal-inner-loading">
-      <img src="images/loading.svg" class="loading">
+      <img src="img/loading.svg" class="loading">
       <p id="uploadText">
         Uploading your data to the dark web...
       </p>
