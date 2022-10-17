@@ -62,7 +62,7 @@ h1 {
   margin-bottom: .5em;
 }
 
-ul, h2, img {
+ul, h2, img, .modal-choice-btns {
   margin-bottom: 1.5em;
 }
 
