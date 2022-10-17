@@ -24,8 +24,7 @@ consentForm.addEventListener("submit", function (e) {
         Uploading your data to the dark web...
       </p>
   </div>`;
-  const uploadText = document.getElementById("uploadText");
   setTimeout(function () {
-    uploadText.innerText = "Making the sale...";
+    document.getElementById("uploadText").textContent = "Making the sale...";
   }, 1500);
 });
