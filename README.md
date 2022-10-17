@@ -12,6 +12,8 @@ Once the user accepts the terms, _and they must with this form_, the popup modal
 
 ![consent given loader](./screenshots/initial-consent-given.png)
 
+To pile on the misery, the message changes to simulate the user's info being sold on the dark web!
+
 All in all it's a project that you would, _hopefully_, never be asked to make in reality, but offered lots of practice.
 
 ## Things I (Re)Learned (i.e. - gained a greater understanding of)

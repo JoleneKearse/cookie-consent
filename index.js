@@ -1,6 +1,6 @@
 const modal = document.getElementById("modal");
 const modalCloseBtn = document.getElementById("modal-close-btn");
-const cookies = document.getElementById("cookies");
+const consentForm = document.getElementById("consentForm");
 const modalText = document.getElementById("modal-text");
 
 // set time interval for annoying modal to appear
@@ -14,8 +14,9 @@ modalCloseBtn.addEventListener("click", function () {
 });
 
 // prevent page from reloading
-cookies.addEventListener("submit", function (e) {
+consentForm.addEventListener("submit", function (e) {
   e.preventDefault();
+  // add loader after submit
   modalText.innerHTML = `
     <div class="modal-inner-loading">
       <img src="img/loading.svg" class="loading">
@@ -23,4 +24,8 @@ cookies.addEventListener("submit", function (e) {
         Uploading your data to the dark web...
       </p>
   </div>`;
+  const uploadText = document.getElementById("uploadText");
+  setTimeout(function () {
+    uploadText.innerText = "Making the sale...";
+  }, 1500);
 });
