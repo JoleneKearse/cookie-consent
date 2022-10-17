@@ -4,7 +4,15 @@ This is a code-along project from **Scrimba**'s **[Frontend Developer Career Pat
 
 _Aside: If you haven't heard of Scrimba, they are a tremendously great learning platform with an in-built editor. You can learn from their teachers and pause the videos and directly code and see your code. They also quite frequently update the learning path. Hence I'm going back to quickly re-do the new projects they keep putting up! I do this when I see interesting new projects, giving me a chance to review concepts._
 
-This is the first project in Module 5 Essential JavaScript Concepts.
+This is the first project in Module 5 Essential JavaScript Concepts. It starts out with a click-bait-worthy article promising an express journey to developer mastery, then is quite quickly interrupted with this rather scary popup.
+
+![Click-bait article being blocked by an annoying popup](./screenshots/initial-page.png)
+
+Once the user accepts the terms, _and they must with this form_, the popup modal is changed to this:
+
+![consent given loader](./screenshots/initial-consent-given.png)
+
+All in all it's a project that you would, _hopefully_, never be asked to make in reality, but offered lots of practice.
 
 ## Things I (Re)Learned (i.e. - gained a greater understanding of)
 
@@ -42,3 +50,7 @@ Also learned a new thing, when you fill out the form and hit submit, it will sho
 ![url showing submitted info](./screenshots/submit-url-deets.png)
 
 As forms are sent off to a server, it creates this **query string**, `?fullName=John+Doe` followed by an ampersand for the next entered field. Since this is a frontend project, we need to use `e.preventDefault()`. We'd also do this when the user would still be interacting with the page.
+
+**What about when there is more than one button on a form?**
+
+Since all buttons in a form are automatically considered Submit buttons, you will need to manually change it's `type="button"`.
