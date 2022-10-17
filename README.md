@@ -56,3 +56,22 @@ As forms are sent off to a server, it creates this **query string**, `?fullName=
 **What about when there is more than one button on a form?**
 
 Since all buttons in a form are automatically considered Submit buttons, you will need to manually change it's `type="button"`.
+
+### TypeError: Cannot set properties of null
+
+I made an error thinking I was organizing my code well by placing all the variables at the top. That is a great practice, but I encountered an issue when making additional changes to the modal.
+
+Here is the page flow:
+
+1. The modal pops up ludicrously fast
+2. The poor user is forced to input their data and Accept the terms.
+3. The modal changes to a loader saying 'it's contacting the dark web.'
+4. Then just the new text changes to 'making the sale...'
+
+I accessed the text via line 23's `id="uploadText"`, and preceeded to change the text after an interval. BUT I ran into a **TypeError**.
+
+Remembering that JavaScript reads from top to bottom, grabbing `uploadText` and putting it at the top will just confuse JS, because it's not created until down in the file.
+
+The **solution**? Grab the element after initialization!
+
+![initializing const variable after it's creation](./screenshots/accessing-eles-before-initialization.png)
