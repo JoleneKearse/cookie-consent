@@ -6,15 +6,17 @@ _Aside: If you haven't heard of Scrimba, they are a tremendously great learning 
 
 This is the first project in Module 5 Essential JavaScript Concepts. It starts out with a click-bait-worthy article promising an express journey to developer mastery, then is quite quickly interrupted with this rather scary popup.
 
-![Click-bait article being blocked by an annoying popup](./screenshots/initial-page.png)
+<div align="center"><img src="screenshots/initial-page.png" alt="article being blocked by an annoying popup"></div>
 
 Once the user accepts the terms, _and they must with this form_, the popup modal is changed to this:
 
-![consent given loader](./screenshots/initial-consent-given.png)
+<div align="center"><img src="./screenshots/initial-consent-given.png" alt="consent given loader"></div>
 
 To pile on the misery, the message changes to simulate the user's info being sold on the dark web!
 
-All in all it's a project that you would, _hopefully_, never be asked to make in reality, but offered lots of practice.
+---
+
+All in all it's a project that you would, _hopefully_, never be asked to make in reality, but it offered lots of practice.
 
 ## Things I (Re)Learned (i.e. - gained a greater understanding of)
 
@@ -24,13 +26,13 @@ Generally I only set the `top` and `left` properties, but using them all along w
 
 I also got a reminder that `position: fixed` fixes the position of whatever element to the **viewport**. You can even scroll and the modal will stay right smack dab in the middle, because the viewport doesn't change.
 
-![position: fixed; working on modal](./screenshots/modal-position-fixed.png)
+<div align="center"><img src="screenshots/modal-position-fixed.png" alt="position: fixed; working on modal"></div>
 
 ### A better/new understanding of setTimeout()
 
 I had never really considered that this method removes something from the flow of your main JavaScript code, which executes from top to bottom.
 
-![setTimeout() used in a quiz app](./screenshots/setTimeout.png)
+<div align="center"><img src="/screenshots/setTimeout.png" alt="setTimeout() used in a quiz app"></div>
 
 This takes in 2 parameters: `(function, delay)`.
 We can use an **anonymous function**, then set the delay in **milliseconds**.
@@ -41,7 +43,7 @@ A **gotcha** is remembering `setTimeout()` takes it completely out of the flow. 
 
 Although it makes sense, I had never considered the following fact. Any button in a form will be a **Submit** button. It doesn't even matter how you add it to the html, it automatically submits the form.
 
-![2 common ways to add a submit button](./screenshots/submit-buttons.png)
+<div align="center"><img src="./screenshots/submit-buttons.png" alt="2 common ways to add a submit button"></div>
 
 The only real advantage to using the `button` tag is you can style it a bit more, like making it an image.
 
@@ -49,7 +51,7 @@ If using this tag, giving it a `type="submit"` will help distinguish it from oth
 
 Also learned a new thing, when you fill out the form and hit submit, it will show up in the URL!
 
-![url showing submitted info](./screenshots/submit-url-deets.png)
+<div align="center"><img src="./screenshots/submit-url-deets.png" alt="url showing submitted info"></div>
 
 As forms are sent off to a server, it creates this **query string**, `?fullName=John+Doe` followed by an ampersand for the next entered field. Since this is a frontend project, we need to use `e.preventDefault()`. We'd also do this when the user would still be interacting with the page.
 
@@ -74,4 +76,14 @@ Remembering that JavaScript reads from top to bottom, grabbing `uploadText` and 
 
 The **solution**? Grab the element after initialization!
 
-![initializing const variable after it's creation](./screenshots/accessing-eles-before-initialization.png)
+<div align="center"><img src="./screenshots/accessing-eles-before-initialization.png" alt="initializing const variable after it's creation"></div>
+
+### FormData
+
+Allows you access to the user's inputted data. `FormData` is a **function** that will return it all as an **object** that can then be sent off to a server from processing.
+
+<div align="center"><img src="./screenshots/FormData-object.png" alt="object with name, email & password"></div>
+
+Assign it to the `new` keyword as it's a **constructor** then `FormData(form variable name)`. You can `console.log` it, but FormData gives a special kind of object - meaning you don't immediately have access to it!
+
+<div align="center"><img src="./screenshots/FormData-code.png" alt="FormDate constructor syntax with console showing success"></div>
