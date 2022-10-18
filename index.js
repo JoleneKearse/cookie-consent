@@ -2,6 +2,7 @@ const modal = document.getElementById("modal");
 const modalCloseBtn = document.getElementById("modal-close-btn");
 const consentForm = document.getElementById("consentForm");
 const modalText = document.getElementById("modal-text");
+const declineBtn = document.getElementById("declineBtn");
 
 // set time interval for annoying modal to appear
 setTimeout(function () {
