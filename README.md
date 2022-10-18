@@ -6,7 +6,7 @@ _Aside: If you haven't heard of Scrimba, they are a tremendously great learning 
 
 This is the first project in Module 5 Essential JavaScript Concepts. It starts out with a click-bait-worthy article promising an express journey to developer mastery, then is quite quickly interrupted with this rather scary popup.
 
-<div align="center"><img src="screenshots/initial-page.png" alt="article being blocked by an annoying popup"></div>
+<div align="center"><img src="./screenshots/cookie-consent-recording.gif" alt="article being blocked by an annoying popup"></div>
 
 Once the user accepts the terms, _and they must with this form_, the popup modal is changed to this:
 
