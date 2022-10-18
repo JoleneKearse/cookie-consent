@@ -89,3 +89,7 @@ Assign it to the `new` keyword as it's a **constructor** then `FormData(form var
 <div align="center"><img src="./screenshots/FormData-code.png" alt="FormDate constructor syntax with console showing success"></div>
 
 **Note**: Make sure you are passing the form element and not a string (like "consentForm") or you will get a **Uncaught TypeError: Failed to construct 'FormData': parameter 1 is not of type 'HTMLFormElement'**.
+
+**How to extract the data?**
+
+You need to use the `.get()` method on the `FormData` object, then pass the name attribute from the HTML as a **string**.

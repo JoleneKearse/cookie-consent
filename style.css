@@ -56,6 +56,10 @@ p{
   line-height: 28px;
 }
 
+span {
+  color: fuchsia;
+}
+
 /* ---------- LAYOUT ----------*/
 
 h1 {
