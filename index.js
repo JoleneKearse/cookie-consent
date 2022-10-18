@@ -38,5 +38,6 @@ consentForm.addEventListener("submit", function (e) {
           <img src="img/pirate.gif">
       </div>
     `;
+    modalCloseBtn.disabled = false;
   }, 3000);
 });
