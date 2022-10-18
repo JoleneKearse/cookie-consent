@@ -56,17 +56,13 @@ p{
   line-height: 28px;
 }
 
-span {
-  color: fuchsia;
-}
-
 /* ---------- LAYOUT ----------*/
 
 h1 {
   margin-bottom: .5em;
 }
 
-ul, h2, img, .modal-choice-btns {
+ul, h2, img, .modal-choice-btns, .modal-inner > p {
   margin-bottom: 1.5em;
 }
 
