@@ -92,4 +92,6 @@ Assign it to the `new` keyword as it's a **constructor** then `FormData(form var
 
 **How to extract the data?**
 
-You need to use the `.get()` method on the `FormData` object, then pass the name attribute from the HTML as a **string**.
+You need to use the `.get()` method on the `FormData` object, then pass the name attribute from the HTML input as a **string**.
+
+<div align="center"><img src="./screenshots/FormData-extract-name.png" alt="Using the get method on FormData to extract the user's name"></div>
