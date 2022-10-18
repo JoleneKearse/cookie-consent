@@ -16,6 +16,9 @@ modalCloseBtn.addEventListener("click", function () {
 // prevent page from reloading
 consentForm.addEventListener("submit", function (e) {
   e.preventDefault();
+  // create form object
+  const consentFormData = new FormData(consentForm);
+  console.log(consentFormData);
   // add loader after submit
   modalText.innerHTML = `
     <div class="modal-inner-loading">

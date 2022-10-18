@@ -87,3 +87,5 @@ Allows you access to the user's inputted data. `FormData` is a **function** that
 Assign it to the `new` keyword as it's a **constructor** then `FormData(form variable name)`. You can `console.log` it, but FormData gives a special kind of object - meaning you don't immediately have access to it!
 
 <div align="center"><img src="./screenshots/FormData-code.png" alt="FormDate constructor syntax with console showing success"></div>
+
+**Note**: Make sure you are passing the form element and not a string (like "consentForm") or you will get a **Uncaught TypeError: Failed to construct 'FormData': parameter 1 is not of type 'HTMLFormElement'**.
