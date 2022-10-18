@@ -151,6 +151,10 @@ color: whitesmoke;
   justify-content: center;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+
 .modal-btn{
   padding: 10px 24px;
   cursor: pointer;

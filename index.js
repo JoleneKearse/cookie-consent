@@ -3,6 +3,12 @@ const modalCloseBtn = document.getElementById("modal-close-btn");
 const consentForm = document.getElementById("consentForm");
 const modalText = document.getElementById("modal-text");
 const declineBtn = document.getElementById("declineBtn");
+const modalChoiceBtns = document.getElementById("modal-choice-btns");
+
+// toggle reverse class on buttons to annoy user
+declineBtn.addEventListener("mouseenter", function () {
+  modalChoiceBtns.classList.toggle("reverse");
+});
 
 // set time interval for annoying modal to appear
 setTimeout(function () {
