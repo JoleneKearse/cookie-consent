@@ -95,3 +95,9 @@ Assign it to the `new` keyword as it's a **constructor** then `FormData(form var
 You need to use the `.get()` method on the `FormData` object, then pass the name attribute from the HTML input as a **string**.
 
 <div align="center"><img src="./screenshots/FormData-extract-name.png" alt="Using the get method on FormData to extract the user's name"></div>
+
+### Toggle
+
+I've only used `toggle` when copying code from light/dark mode tutorials, so this use and explanation was illuminating (_pun intended_).
+
+Here we use it to really annoy our users by swapping the order of the accept/decline buttons when they try to click decline.
