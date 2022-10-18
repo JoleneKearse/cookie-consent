@@ -101,3 +101,14 @@ You need to use the `.get()` method on the `FormData` object, then pass the name
 I've only used `toggle` when copying code from light/dark mode tutorials, so this use and explanation was illuminating (_pun intended_).
 
 Here we use it to really annoy our users by swapping the order of the accept/decline buttons when they try to click decline.
+
+The buttons are in a `modal-choice-btns` div with flex, so we can set it all up in easy steps:
+
+1. Add an `id="declineBtn"` to the HTML
+2. Write a `mouseenter` event listener to the button
+3. Create a special class in the CSS:
+   `.reverse { flex-direction: row-reverse; }`
+4. Then toggle the `classList` when the user hovers over the Decline button
+5. Evil laugh...
+
+<div align="center"><img src="./screenshots/toggle.png"></div>
